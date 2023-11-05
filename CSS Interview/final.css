@@ -1,0 +1,43 @@
+
+.parent{
+    height: 100px;
+    
+}
+.mainbox{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: aqua;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    background-image: url(./logo.png);
+    background-repeat: no-repeat;
+
+    height: 100px;
+    width: 100px;
+}
+button{
+    margin: 10px;
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    animation-name: dk;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes dk{
+    10%{
+        transform: rotateZ(5852deg);
+    }
+    100%{
+        transform: rotateZ(5841255552deg);
+    }
+}
+.parent>h1{
+    background-color: aquamarine;
+}

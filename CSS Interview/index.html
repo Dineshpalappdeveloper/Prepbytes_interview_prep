@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto+Slab:wght@100;200;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      h3 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        color: green;
+      }
+      .parent {
+        height: 500px;
+        width: 80%;
+        background-color: yellow;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        margin: 15px;
+        background-color: aqua;
+      }
+      .internal {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>
+      <h2>q1. flex direction</h2>
+      <h3>flex-direction:column</h3>
+      <div class="parent" style="display: flex; flex-direction: column">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <h3>flex-direction:row</h3>
+      <div class="parent" style="display: flex; flex-direction: row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div> -->
+    <!-- <div>
+      <h2>q2. Inline , internal , external</h2>
+      <h1 style="color: rebeccapurple">Inline</h1>
+      <div class="internal">Internal</div>
+      <div class="external">external</div>
+    </div> -->
+
+    <!--     
+    <div>
+      <h2>q3. justify-content</h2>
+      <h3>justify-content:start (default)</h3>
+      <div class="parent" style="display: flex; justify-content: flex-start">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <h3>justify-content: center</h3>
+      <div class="parent" style="display: flex; justify-content: center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <h3>justify-content: end</h3>
+      <div class="parent" style="display: flex; justify-content: end">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <h3>justify-content: space-around</h3>
+      <div class="parent" style="display: flex; justify-content: space-around">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <h3>justify-content: space-evenly</h3>
+      <div class="parent" style="display: flex; justify-content: space-evenly">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <h3>justify-content: space-between</h3>
+      <div class="parent" style="display: flex; justify-content: space-between">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <h3>justify-content: strech</h3>
+      <div
+        class="parent1"
+        style="
+          display: flex;
+          justify-content: stretch;
+          width: 300px;
+          height: 200px;
+        "
+      >
+        <div class="box1" style="height: 100px">helo</div>
+        <div class="box1" style="height: 100px">helo</div>
+      </div>
+    </div> -->
+    <!-- <div>
+      <h2>q4. Absolute vs Relative</h2>
+      <h3>position: relative;</h3>
+      <div class="parent">
+        <div class="box"></div>
+        <div class="box" style="position: relative; top: 150px; left: 200px">
+          relative
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <h3>position: relative;</h3>
+      <div class="parent" style="position: relative">
+        <div class="box"></div>
+        <div class="box" style="position: absolute; top: 150px; left: 200px">
+          relative
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div> -->
+
+    <!-- <div>
+
+      <h2>q4. sticky vs fixed</h2>
+      <h3>position: sticky;</h3>
+      <div class="parent1">
+        <div class="box"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <div class="box" style="position: sticky; top: 50px; left: 200px">
+          sticky
+        </div>
+        <div class="box"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <div class="box"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+      </div>
+      <h3>position: fixed;</h3>
+      <div class="parent1" style="background-color: blueviolet">
+        <div class="box"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <div class="box" style="position: fixed; top: 50px; left: 500px">
+          fixed
+        </div>
+        <div class="box"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <div class="box"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab vitae
+          qui laudantium necessitatibus quasi, ut tenetur, ipsa atque pariatur
+          dolores deserunt nesciunt accusantium saepe corrupti ullam. Magni,
+          aspernatur aperiam.
+        </p>
+      </div>
+    </div> -->
+    <!--     
+    <h3>q5 grid colomn</h3>
+    external css
+    <div class="parent grid">
+      <div class="box1">heloo</div>
+      <div class="box2">bolo</div>
+      <div class="box3">hii</div>
+      <div class="box4">heloos</div>
+    </div> -->
+    <!-- <h3>q6 z-index</h3>
+
+    <div class="parent">
+      <div class="box box1">heloo</div>
+      <div class="box box2">bolo</div>
+    </div> -->
+    <!-- 
+    <div>
+    <h2>q7 margin vs padding </h2>
+      <div class="parent">
+        <div class="box padding">padding 20px</div>
+        <div class="box margin">margin 20px</div>
+      </div>
+    </div> -->
+    <!-- 
+    <div>
+      <div class="parent">
+        <div class="box" style="box-sizing: border-box; padding: 10px">
+          border box
+        </div>
+        <div class="box" style="box-sizing: content-box; padding: 10px">
+          contenyt box
+        </div>
+      </div> -->
+    <!-- 
+
+      <div>
+        animation delay
+        <div class="parent">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+        </div>
+      </div>
+    </div> -->
+    <!-- 
+
+    <div>
+      <div class="parent">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+      </div>
+    </div> -->
+    <!-- <div class="box">heloo</div> -->
+    <!-- 
+    <div>
+      <div class="parent">
+        <h2>Dispaly none box 2</h2>
+        <div class="box">box1</div>
+        <div class="box box2" style="display: none">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+      </div>
+      <div class="parent">
+        <h2>visivility hidden box 2</h2>
+        <div class="box">box1</div>
+        <div class="box box2" style="visibility: hidden">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+      </div>
+    </div> -->
+    <!-- 
+    <div>
+      <h2>css combinatitor</h2>
+      <div class="parent">
+        hello babu
+        <div class="box1">
+          hi i am dinesh
+          <p class="babu">hi i am paragaraph<p>hi i am paragaraph</p>
+          <p>hi i am paragaraph</p></p>
+          <p>hi i am paragaraph</p>
+          
+          <p>hi i am paragaraph</p>
+          <p>hi i am paragaraph</p>
+          <p>hi i am paragaraph</p>
+          <p>hi i am paragaraph</p>
+          <p>hi i am paragaraph</p>
+          <p>hi i am paragaraph</p>
+          <p>hi i am paragaraph</p>
+        </div>
+      </div>
+    </div>
+    <div> -->
+    <!-- <h2>css combinatitor</h2> -->
+    <!-- <h3>+</h3>
+    <div class="box22">
+      <h1>gekiio</h1>
+      <p>hi i am paragaraph</p>
+      <p>hi i am paragaraph</p>
+      <p>hi i am paragaraph</p>
+    </div>
+ -->
+    <!-- <div>
+  <h2><a href="./anim.html">Anim</a></h2>
+ </div> -->
+    <!-- <div>
+      <button>Enroll Now</button>
+    </div> -->
+    <!--     
+    <div>
+      <h2>Hii I am Dinesh</h2>
+      <h1>Hii I am Dinesh</h1>
+      <p>Hii I am Dinesh</p>
+      <div class="div">Hii I am Dinesh</div>
+    </div> -->
+
+    <!--     
+    <div class="parent">
+      <div class="box">box</div>
+    </div> -->
+    <!-- <div class="parent">
+      <div class="box3"></div>
+    </div> -->
+    <!-- <div class="parent">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div> -->
+    <!-- animation -->
+    <!-- <div class="parent">
+      <div class="box"></div>
+    </div> -->
+    <!-- .header -->
+    <!-- <div class="parent">
+      <div class="logo"></div>
+      <div class="menu">
+        <button>Home</button><button>menu</button> <button>service</button
+        ><button>about</button>
+      </div>
+    </div> -->
+    <!-- row and coloumn? -->
+    <!-- <div class="parent">
+      <div class="box2">hello</div>
+      <div class="box2">bolo</div>
+      <div class="box2">yarr</div>
+    </div> -->
+
+    <!-- <div class="parent"><button>Login</button> <button>Sign Up</button></div> -->
+    <!-- transition -->
+    <!-- 
+    <div class="parent">
+      <div class="box"></div>
+    </div> -->
+
+    <!-- tranform -->
+    <!-- 
+    <div class="parent">
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+      <div class="box box4">box4</div>
+      <div class="box box5">box5</div>
+    </div>
+
+     -->
+
+    <div class="parent2"></div>
+  </body>
+</html>
